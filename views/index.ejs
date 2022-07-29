@@ -1,0 +1,26 @@
+<%- include ('./partials/header')%>
+<%- include ('./partials/homenavbar')%>
+<body>
+    <div class="container">
+        <hr>
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo ao Criarticles</h1>
+            <p class="lead">Aproveite nosso site, crie seu conteúdo e aproveite nossas ferramentas para tirar dúvidas.</p>
+            <hr class="my-4">
+            <p>“Não crie limites para si mesmo. Você deve ir tão longe quanto sua mente permitir. O que você mais quer pode ser conquistado” – Mary Kay Ash</p>
+          </div>
+          <hr>
+          <% articles.forEach(article => { %>
+              <div class="card">
+                  <div class="card-header">
+                      <h5><%= article.title %></h5>
+                  </div>
+                  <div class="card-body">
+                      <a href="/<%= article.slug %>" class="btn btn-primary btn-sm"> ABRIR</a>
+                  </div>
+              </div>
+              <br>
+          <% }) %>
+    </div>
+</body>
+<%- include ('./partials/footer')%>

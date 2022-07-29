@@ -1,0 +1,21 @@
+<%- include ('../../partials/header')%>
+<div class="container">
+    <hr>
+    <div class="card mt-5">
+        <div class="card-header">
+            <h4>Criação de Usuário</h4>
+            <div class="card-body">
+                <form action="/users/create" method="POST">
+                    <input class="form-control" name="email" type="email" placeholder="email@exemplo.com"><br>
+                    <input class="form-control" name="password" type="password" placeholder="* * * * * *"><br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-primary">Criar Usuário</button>
+                    <a class="btn btn-primary" type="inicio1" href="/login" role="button">Login</a>
+                    <a class="btn btn-primary" type="inicio" href="/" role="button">Inicio</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ('../../partials/footer')%>

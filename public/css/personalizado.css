@@ -1,0 +1,31 @@
+button[type="submit"]{
+    background-color: #0000FF;
+    border: none;
+    width: 250px;
+    left: 155px;
+	position: absolute;
+	top: 88%;
+	transform: translate(-50%, -50%);
+}
+body{
+    background-color: #dce8f0;
+}
+a[type="inicio"]{
+    background-color: #0000FF;
+    border: none;
+    width: 250px;
+    left: 430px;
+	position: absolute;
+	top: 88%;
+	transform: translate(-50%, -50%);
+}
+
+a[type="inicio1"]{
+    background-color: #0000FF;
+    border: none;
+    width: 250px;
+    left: 704px;
+	position: absolute;
+	top: 88%;
+	transform: translate(-50%, -50%);
+}
